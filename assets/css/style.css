@@ -380,3 +380,8 @@ p {
   }
 }
 
+/* @media (min-width: 992px) { /* large devices and up */
+  /* .inner-25 { flex: 0 0 25%; max-width: 25%; } */
+  /* .inner-60 { flex: 0 0 60%; max-width: 60%; } */
+  /* .inner-75 { flex: 0 0 75%; max-width: 75%; } */
+/* } */
