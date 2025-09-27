@@ -182,36 +182,6 @@ html {
 
 /*  Team page
 ==================================== */
-.inner-20 {
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.inner-25 {
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.inner-60 {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.inner-75 {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.inner-90 {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .team-page p {
   text-align: justify;
   margin-top: 0.5rem;
@@ -358,6 +328,36 @@ h3 {
 
 }
 
+.inner-20 {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-25 {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-60 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-75 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-90 {
+  flex: 0 0 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 
@@ -380,8 +380,9 @@ p {
   }
 }
 
-/* @media (min-width: 992px) { /* large devices and up */
+/* @media (min-width: 992) { large devices and up */
   /* .inner-25 { flex: 0 0 25%; max-width: 25%; } */
   /* .inner-60 { flex: 0 0 60%; max-width: 60%; } */
   /* .inner-75 { flex: 0 0 75%; max-width: 75%; } */
+  /* .inner-90 { flex: 0 0 75%; max-width: 75%; } */
 /* } */
