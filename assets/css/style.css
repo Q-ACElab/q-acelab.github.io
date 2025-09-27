@@ -265,6 +265,28 @@ figure img {
   box-shadow: 0 4px 6px rgba(0, 51, 102, 0.6); /* x-offset, y-offset, blur-radius, color */
 }
 
+.accordion-item.short-block {
+  border: none;               /* remove Bootstrap border */
+  background-color: #f2f2f2;  /* keep your gray background */
+  border-radius: 12px;        /* rounded corners */
+  padding: 20px;              /* inner spacing */
+  margin-bottom: 15px;        /* separation between items */
+  box-shadow: 0 4px 6px rgba(0, 51, 102, 0.6); 
+}
+
+/* Style the button to look less "Bootstrap accordion-y" */
+.accordion-button {
+  background: none;           /* remove default gradient */
+  box-shadow: none;           /* remove Bootstrap shadow */
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0F4879;             /* your brand blue */
+  background: none;
+}
+
 .block-heading h4 {
   color: #0F4879;
   text-align: center;
