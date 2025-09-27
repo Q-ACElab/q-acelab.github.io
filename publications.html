@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q-ACE Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" >
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="publications-page">
+  
+<!-- - navigation panel -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Quantum Automation & Control Enhancement Lab</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link active" href="publications.html">Publications</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="team.html">Team</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--- end of navigation panel -->
+
+<!-- Theme picture -->
+<div class="featured_content py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12 mb-12">
+        <div class="feature_grid bg2 h-500 d-flex align-items-center justify-content-center">
+        </div>
+      </div>
+    </div>
+    <p class="fw-bold fs-5 mb-0">
+      To see the full list of publications from the Q-ACE lab, go to the <a href="#papers" class="link-accent">publications list</a>.
+    </p>
+  </div>
+</div>
+<!-- end of navigation figures -->
+
+<!-- Features -->
+<section id="features">
+  <div class="container">
+    <!-- BATIS -->
+		<div class="row short-block align-items-center mt-0 mb-3">
+      <!-- Right column (2/3 width) -->
+      <div class="col-lg-8">
+        <div class="block-heading-two mb-2">
+          <h4>
+          <a href="https://arxiv.org/abs/2412.07676" class="link-accent">BATIS: Bootstrapping, Autonomous Testing, and Initialization System 
+            for Quantum Dot Devices</a> (arXiv: 2412.07676)
+          </h4>
+          <p class="ms-auto text-end" style="width:80%;">
+          by T.&nbsp;J.&nbsp;Kovach, D.&nbsp;Schug, M.&nbsp;A.&nbsp;Wolfe, E.&nbsp;R.&nbsp;MacQuarrie, P.&nbsp;J.&nbsp;Walsh,  
+          J.&nbsp;Benson, M.&nbsp;Friesen, M.&nbsp;A.&nbsp;Eriksson, and J.&nbsp;P.&nbsp;Zwolak
+          </p>
+        </div>
+        <p style="text-align: justify;">
+        Historically, tuning of QD devices has been labor-intensive, error-prone, and limited to small-scale systems. 
+        As gate counts in quantum devices grow, scripted approaches become infeasible due to the increasing complexity 
+        of the gate space. <em>BATIS: Bootstrapping, Autonomous Testing, and Initialization System</em> overcomes this 
+        challenge by automating device initialization without prior characterization, enabling efficient navigation of 
+        high-dimensional gate spaces. We demonstrate the first-ever autonomous bootstrapping of a SiGe accumulation-mode 
+        semiconductor quad-QD array in an academic setting, going beyond the autotuning of simpler nanowire and 
+        depletion-mode reduced gate stack devices proposed to date.
+        </p>
+      </div>
+      <!-- Left column (1/3 width) -->
+      <div class="col-lg-4 text-center mb-3 mb-lg-0">
+        <figure>
+          <img src="images/papers/BATIS.png" alt="BATIS" class="img-fluid shadow-sm">
+        </figure>
+      </div>
+    </div>
+
+    <!-- MAViS -->
+		<div class="row short-block align-items-center mt-0 mb-3">
+      <!-- Left column (1/3 width) -->
+      <div class="col-lg-4 text-center mb-3 mb-lg-0">
+        <figure>
+          <img src="images/papers/MAViS.png" alt="BATIS" class="img-fluid shadow-sm">
+        </figure>
+      </div>
+      <!-- Right column (2/3 width) -->
+      <div class="col-lg-8">
+        <div class="block-heading-two mb-2">
+          <h4>
+          <a href="https://arxiv.org/abs/2411.12516" class="link-accent">Modular Autonomous Virtualization System for Two-Dimensional
+            Semiconductor Quantum Dot Arrays</a> (arXiv: 2411.12516)
+          </h4>
+          <p class="ms-auto text-end" style="width:90%;">
+          by A.&nbsp;S.&nbsp;Rao, D.&nbsp;Buterakos, B.&nbsp;van Straaten, V.&nbsp;John, C.&nbsp;X.&nbsp;Yu, S.&nbsp;D.&nbsp;Oosterhout,  
+          L.&nbsp;Stehouwer, G.&nbsp;Scappucci, M.&nbsp;Veldhorst, F.&nbsp;Borsoi, and J.&nbsp;P.&nbsp;Zwolak
+          </p>
+        </div>
+        <p style="text-align: justify;">
+        <em>MAViS (Modular Automated Virtualization System)</em> marks the first real-time application of machine learning in large, highly 
+          connected quantum dot arrays, achieving independent control of the key Hamiltonian parameters. MAViS introduces a structured, multi-layer 
+          framework, enabling accurate and fast orthogonal plunger gates and high-precision barrier virtualization. We explore the application 
+          limits of the linear virtual gates approach, and integrate quadratic corrections for large barrier pulsing in the high tunnel coupling regime. 
+          MAViS modularity supports integration with diverse tools. This work redefines automation in extended quantum devices, bridging AI and quantum 
+          computing to tackle the complexities of spin-based qubit manipulation.
+        </p>
+      </div>
+    </div>
+	</div>	
+</section>
+<!-- end features -->
+
+
+<!-- Publications -->
+<section id="papers">
+	<div class="container">
+		<!-- navigation -->
+		<div class="row short-block row-light mt-0 mb-3">
+      <p class="fw-bold fs-5">
+      The full list of publications from the Q-ACE lab</a>.
+      </p>
+			<ul class="ms-4">
+				<li><a href="#quantum-qd" class="link-accent">Quantum technology: Quantum dot arrays</a></li>
+				<li><a href="#quantum-amo" class="link-accent">Quantum technology: Atomic and molecular physcis</a></li>
+				<li><a href="#media" class="link-accent">Media and impact</a></li>
+				<li><a href="#social" class="link-accent">Social studies</a></li>
+			</ul>
+		</div>
+		
+    <!-- list of cm publications -->
+		<div class="row long-block mt-0 mb-3">
+      <div class="col-lg-12">
+			  <p class="fw-bold fs-6 mt-0" id="quantum-qd">Quantum technology: Quantum dot arrays</p>
+			  <ol reversed>
+          <li>A. S. Rao, D. Buterakos, B. van Straaten, V. John, C. X. Yu, S. D. Oosterhout, L. Stehouwer, G. Scappucci, M. Veldhorst, F. Borsoi, 
+          and <strong>J. P. Zwolak</strong>. <a href="https://link.aps.org/doi/10.1103/PhysRevX.15.021034" class="link-accent"><em>Modular Autonomous Virtualization System 
+          for Two-Dimensional Semiconductor Quantum Dot Arrays</em></a>. Phys. Rev. X <strong>25</strong> (2), 021034 (2025).</li>
+          
+          <li>A. Zubchenko, D. Middlebrooks, T. Rasmussen, L. Lausen, F. Kuemmeth, A. Chatterjee, and <strong>J. P. Zwolak</strong>. 
+          <a href="https://link.aps.org/doi/10.1103/PhysRevApplied.23.014072" class="link-accent"><em>Autonomous bootstrapping of quantum dot devices</em></a>. 
+          Phys. Rev. Appl. <strong>23</strong> (1), 014072 (2025).</li>
+          
+          <li>D. Schug, T. J. Kovach, M. A. Wolfe, J. Benson, S. Park, J. P. Dodson, J. Corrigan, M. A. Eriksson, and <strong>J. P. Zwolak</strong>. 
+          <a href="https://doi.org/10.1088/2632-2153/ada087" class="link-accent"><em>Automation of quantum dot measurement analysis via explainable machine learning</em></a>. 
+          Mach. Learn.: Sci. Technol. <strong>6</strong> (1): 015006 (2025)</li>
+            
+          <li><strong>J. P. Zwolak</strong>, J. M. Taylor, <em>et al.</em> <a href="https://doi.org/10.1038/s41534-024-00878-x" class="link-accent"><em>Data needs and challenges 
+          for quantum dot devices automation</em>.</a> npj Quantum Inf. <strong>10</strong> (1): 105 (2024).</li>
+
+          <li>D. Schug, T. J. Kovach, M. A. Wolfe, J. Benson, S. Park, J. P. Dodson, J. Corrigan, M. A. Eriksson, and <strong>J. P. Zwolak</strong>. 
+          <em>Explainable Classification Techniques for Quantum Dot Device Measurements</em>. In: Proceedings of the XAI4Sci: Explainable machine learning 
+          for sciences workshop (AAAI 2024), Vancouver, Canada [February 26, 2024] (2024).</li>
+        
+          <li>J. Ziegler, F. Luthi, M. Ramsey, F. Borjans, G. Zheng, and <strong>J. P. Zwolak</strong>. <a href="https://link.aps.org/doi/10.1103/PhysRevApplied.20.034067" 
+          class="link-accent"><em>Tuning arrays with rays: Physics-informed tuning of quantum dot charge states</em></a>. Phys. Rev. Appl. <strong>20</strong> (3), 034067 (2023).
+            <ul>
+              <li>Featured as Editor’s Suggestion in <em>Physical Review Applied</em>.</li>
+            </ul>
+          </li>
+          
+          <li>J. Ziegler, F. Luthi, M. Ramsey, F. Borjans, G. Zheng, and <strong>J. P. Zwolak</strong>. <a href="https://link.aps.org/doi/10.1103/PhysRevApplied.19.054077" 
+          class="link-accent"><em>Automated extraction of capacitive coupling for quantum dot systems</em></a>. Phys. Rev. Appl. <strong>19</strong> (5), 054077 (2023).
+            <ul>
+              <li>Featured as Editor’s Suggestion in <em>Physical Review Applied</em>.</li>
+            </ul>
+          </li>
+
+          <li><strong>J. P. Zwolak</strong> and J. M. Taylor. <a href="https://link.aps.org/doi/10.1103/RevModPhys.95.011006" class="link-accent"><em>Colloquium: Advances in 
+          automation of quantum dot devices control</em></a>. Rev. Mod. Phys. <strong>95</strong>(1), 011006 (2023).
+            <ul>
+              <li><em>Best Journal Paper of the Year</em> award by NIST/Information Technology Laboratory (2024).</li>
+            </ul>
+          </li>
+          
+          <li>J. Ziegler, T. McJunkin, E. S. Joseph, S. S. Kalantre, B. Harpt, D. E. Savage, M. G. Lagally, M. A. Eriksson, J. M. Taylor, and <strong>J. P. Zwolak</strong>.
+          <a href="https://link.aps.org/doi/10.1103/PhysRevApplied.17.024069" class="link-accent"><em>Toward Robust Autotuning of Noisy Quantum Dot Devices</em></a>. Phys. 
+          Rev. Appl. <strong>17</strong> (2): 024069 (2022).</li>
+          
+          <li>B. J. Weber, S. S. Kalantre, T. McJunkin, J. M. Taylor, and <strong>J. P. Zwolak</strong>. <a href="https://doi.org/10.1007/s42979-021-00921-0" class="link-accent">
+          <em>Theoretical bounds on data requirements for the ray-based classification</em></a>. SN Comput. Sci. <strong>3</strong> (1): 57 (2022).</li>
+
+          <li><strong>J. P. Zwolak</strong>, T. McJunkin, S. S. Kalantre, S. F. Neyens, E. R. MacQuarrie, M. A. Eriksson, and J. M. Taylor. 
+          <a href="https://link.aps.org/doi/10.1103/PRXQuantum.2.020335" class="link-accent"><em>Ray-based framework for state identification in quantum dot devices</em></a>. 
+          PRX Quantum <strong>2</strong> (2): 020335 (2021).</li>
+
+          <li><strong>J. P. Zwolak</strong>, S. S. Kalantre, T. McJunkin, B. J. Weber, and J. M. Taylor. <em>Ray-based classification framework for high-dimensional data</em>. 
+          In: Proceedings of the Machine Learning and the Physical Sciences Workshop (NeurIPS 2020), Vancouver, Canada [December 11, 2020] (2020).</li>
+          
+          <li><strong>J. P. Zwolak</strong>, T. McJunkin, S. S. Kalantre, J. P. Dodson, E. R. MacQuarrie, D. E. Savage, M. G. Lagally, S. N. Coppersmith, M. A. Eriksson, 
+          and J. M. Taylor. <a href="https://doi.org/10.1103/PhysRevApplied.13.034075" class="link-accent"><em>Autotuning of double-dot devices in situ with machine 
+            learning</em></a>. Phys. Rev. Appl. <strong>13</strong> (3): 034075 (2020).<!-- wp:list -->
+            <ul>
+              <li>Featured as Editor’s Suggestion in <em>Physical Review Applied</em>.</li>
+              <li>Featured in NIST News: <a href="https://www.nist.gov/news-events/news/2020/03/tune-your-quantum-computer-better-call-ai-mechanic" class="link-accent">
+                To Tune Up Your Quantum Computer, Better Call an AI Mechanic: New paradigm for “auto-tuning” quantum bits could overcome major engineering hurdle</a> 
+                (March 31, 2020).</li>
+            </ul>
+          </li>
+        
+          <li>S. S. Kalantre, <strong>J. P. Zwolak</strong>, S. Ragole, X. Wu, N. M. Zimmerman, M. D. Stewart, and J. M. Taylor. <a href="https://doi.org/10.1038/s41534-018-0118-7" 
+          class="link-accent"><em>Machine Learning techniques for state recognition and auto-tuning in quantum dots</em></a>. npj Quantum Inf. <strong>5</strong> (1): 6 (2019).</li>
+          
+          <li><strong>J. P. Zwolak</strong>, S. S. Kalantre, X. Wu, S. Ragole, and J. M. Taylor. <a href="https://doi.org/10.1371/journal.pone.0205844" class="link-accent">
+          <em>QFlow lite dataset: A machine-learning approach to the charge states in quantum dot experiments</em></a>. PLoS ONE <strong>13</strong> (10): e0205844 (2018).</li>
+			  </ol>
+			  <div><a href="#papers" class="link-accent">Back to top</a></div>
+		  </div>
+    </div>
+
+    <!-- list of amo publications -->
+		<div class="row long-block mt-0 mb-3">
+      <div class="col-lg-12">
+			  <p class="fw-bold fs-6 mt-0" id="quantum-amo">Quantum technology: Atomic and molecular physcis</p>
+			  <ol reversed>
+          <li>D. Schug, S. Yerramreddy, R. Caruana, C. Greenberg, and <strong>J. P. Zwolak</strong>. <em>Extending Explainable Boosting Machines to Scientific 
+          Image Data</em>. In: Proceedings of the Machine Learning and the Physical Sciences Workshop, (NeurIPS 2023), New Orleans, LA, USA [December 15, 2023] (2023).</li>
+          
+          <li>A. R. Fritsch, S. Guo, S. M. Koh, I. B. Spielman, and <strong>J. P. Zwolak</strong>. <a href="https://dx.doi.org/10.1088/2632-2153/ac9454" class="link-accent"><em>Dark Solitons 
+          in Bose-Einstein Condensates: A Dataset for Many-body Physics Research</em></a>. Mach. Learn.: Sci. Technol. <strong>3</strong> (4): 047001 (2022).</li>
+
+          <li>S. Guo, S. M. Koh, A. R. Fritsch, I. B. Spielman, and <strong>J. P. Zwolak</strong>. <a href="https://link.aps.org/doi/10.1103/PhysRevResearch.4.023163" class="link-accent">
+          <em>Combining machine learning with physics: A framework for tracking and sorting multiple dark solitons</em></a>. Phys. Rev. Res. <strong>4</strong> (2): 
+          023163 (2022).</li>
+
+          <li>S. Guo, A. R. Fritsch, C. Greenberg, I. Spielman, and <strong>J. P. Zwolak</strong>. <a href="https://doi.org/10.1088/2632-2153/abed1e" class="link-accent">
+          <em>Machine-learning enhanced dark soliton detection in Bose-Einstein condensates</em></a>. Mach. Learn.: Sci. Technol. <strong>2</strong> (3): 035020 (2021).</li>
+			  </ol>
+			  <div><a href="#papers" class="link-accent">Back to top</a></div>
+		  </div>
+    </div>
+
+    <!-- list of media and impact publications -->
+		<div class="row long-block mt-0 mb-3">
+      <div class="col-lg-12">
+			  <p class="fw-bold fs-6 mt-0" id="media">Media and impact</p>
+			  <ol reversed>
+          <li><strong>J. P. Zwolak</strong> (March 12, 2025). Marie Skłodowska-Curie: A Legacy of Innovation and Empowerment for Women in Science. Taking Measure: 
+				  Just a Standard Blog, <a href="https://www.nist.gov/blogs/taking-measure/marie-sklodowska-curie-legacy-innovation-and-empowerment-women-science" class="link-accent">
+					https://www.nist.gov/blogs/taking-measure/marie-sklodowska-curie-legacy-innovation-and-empowerment-women-science</a>.</li>
+				
+			    <li><strong>J. P. Zwolak</strong> (March 22, 2023). <em>Ada Lovelace: The World's First Computer Programmer Who Predicted Artificial Intelligence.</em> 
+				  Taking Measure: Just a Standard Blog, <a href="https://www.nist.gov/blogs/taking-measure/ada-lovelace-worlds-first-computer-programmer-who-predicted-artificial" class="link-accent">
+					https://www.nist.gov/blogs/taking-measure/ada-lovelace-worlds-first-computer-programmer-who-predicted-artificial</a>.</li>
+
+    			<li>Mary Theofanos and <strong>J. P. Zwolak</strong> (May 16, 2021). <em>Diversity and Inclusivity at NIST</em>. Women in Standards News, 
+		  		<a href="https://womeninstandards.org/diversity-and-inclusivity-at-nist/" class="link-accent">https://womeninstandards.org/diversity-and-inclusivity-at-nist/</a>.</li>
+
+    			<li><strong>J. P. Zwolak</strong> (June 2, 2020). <em>Ebb and Flow: Creating Quantum Dots Automatically With AI</em>. Taking Measure: Just a Standard Blog, 
+		  		<a href="https://www.nist.gov/blogs/taking-measure/ebb-and-flow-creating-quantum-dots-automatically-ai" class="link-accent">
+					https://www.nist.gov/blogs/taking-measure/ebb-and-flow-creating-quantum-dots-automatically-ai</a>.</li>
+			  </ol>
+			  <div><a href="#papers" class="link-accent">Back to top</a></div>
+		  </div>
+    </div>
+
+    <!-- list of social publications -->
+		<div class="row long-block mt-0 mb-3">
+      <div class="col-lg-12">
+			  <p class="fw-bold fs-6 mt-0" id="social">Social studies</p>
+			  <ol reversed>
+          <li>A. M. Andrews and <strong>J. P. Zwolak</strong>. <em><a href="https://doi.org/10.6028/NIST.SP.1313e2024" class="link-accent">NIST Scientific Integrity Program. Annual Report.</a>
+          </em> Natl. Inst. Stand. Technol. Sp. Rep. 1313e2024 (2024).</li>
+
+          <li>R. P. Dalka and <strong>J. P. Zwolak</strong>. <a href="https://link.aps.org/doi/10.1103/PhysRevPhysEducRes.20.020106" class="link-accent"><em>Network analysis of graduate 
+          program support structures through experiences of various demographic groups</em></a>. Phys. Rev. Phys. Educ. Res. <strong>20</strong> (2): 020106 (2024).</li>
+          
+          <li>A. M. Andrews and <strong>J. P. Zwolak</strong>. <a href="https://doi.org/10.6028/NIST.SP.1313" class="link-accent" data-type="link" data-id="https://doi.org/10.6028/NIST.SP.1313">
+          <em>NIST Scientific Integrity Program. Annual Report</em>.</a> Natl. Inst. Stand. Technol. Sp. Rep. 1313 (2024).</li>
+
+          <li>R. P. Dalka, Diana Sachmpazidi, Charles Henderson, and <strong>J. P. Zwolak</strong>. <a href="https://link.aps.org/doi/10.1103/PhysRevPhysEducRes.18.020113" class="link-accent">
+          <em>Network analysis approach to Likert-style surveys</em></a>. Phys. Rev. Phys. Educ. Res. <strong>18</strong>(2): 020113 (2022).</li>
+
+          <li>E. A. Williams, <strong>J. P. Zwolak</strong>, R. Dou, and E. Brewe. <a href="https://doi.org/10.1103/PhysRevPhysEducRes.15.020150" class="link-accent"><em>Linking engagement 
+          and performance: The social network analysis perspective</em></a>. Phys. Rev. Phys. Educ. Res. <strong>15</strong> (2): 020150 (2019).</li>
+			  </ol>
+			  <div><a href="#papers" class="link-accent">Back to top</a></div>
+		  </div>
+    </div>
+	</div>
+</section>
+<!-- end of publications -->
+
+
+<!-- Footer -->
+<footer class="footer py-4">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Contact info -->
+      <div class="col-lg-6 mb-4 mb-lg-0 text-white">
+        <h5 class="fw-bold mb-3">Contact</h5>
+        <address class="mb-3">
+          <i>Applied and Computational Mathematics Division</i><br>
+            <strong>National Institute of Standards and Technology</strong><br>
+            100 Bureau Drive, Stop 8910<br>
+            Gaithersburg, MD 20899-8910 USA
+        </address>
+        <p class="mb-1">
+          <i class="bi bi-envelope-fill me-2"></i>
+          Email: <a href="mailto:jpzwolak@nist.gov">jpzwolak@nist.gov</a><br>
+          <i class="bi bi-envelope-fill me-2"></i>
+          Alt. email: <a href="mailto:jpzwolak@umd.edu">jpzwolak@umd.edu</a>
+        </p>
+      </div>
+
+      <!-- Image / graphic -->
+      <div class="col-lg-6 text-center">
+        <img src="images/theme/chip-contact.png" alt="chip figure" class="img-fluid shadow-sm">
+      </div>
+
+    </div>
+  </div>
+</footer>
+<!-- end of footer -->
+
+<!-- jQuery and Bootstrap Bundle (with Popper) -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

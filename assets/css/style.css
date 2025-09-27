@@ -1,0 +1,382 @@
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 70px; /* adjust to match navbar height */
+  background-color: #e6e6e6;
+}
+
+/* Small screens (collapsed navbar is taller) */
+@media (max-width: 767.98px) {
+  body {
+    padding-top: 90px; /* extra space for mobile nav toggle */
+  }
+}
+
+/* Extra small screens (if your logo or menu stacks higher) */
+@media (max-width: 575.98px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+.container {
+	padding:0 50px 0 50px;
+	position:relative;
+}
+
+/*  Navigation
+==================================== */
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;      /* freeze */
+  background-color: #c9c9c9;
+  box-shadow: 0 4px 6px rgba(0, 51, 102, 0.6); /* x-offset, y-offset, blur-radius, color */
+
+  /* Link colors (Bootstrap 5 variables) */
+  --bs-navbar-color: #6C6C6C;          /* default */
+  --bs-navbar-hover-color: #1B1B1B;    /* active */
+  --bs-navbar-active-color: #428bca;   /* hover */
+  --bs-navbar-disabled-color: #6C6C6C; /* just in case */
+
+  /* Brand colors (Q-ACE Lab) */
+  --bs-navbar-brand-color: rgb(0, 51, 102); /* #0F4879 */
+  --bs-navbar-brand-hover-color: #0055aa;
+}
+
+.navbar .navbar-brand {
+  color: #0F4879;
+  font-weight: bold;          /* optional: make it pop */
+}
+
+/* Navbar links default style */
+.navbar .nav-link {
+  text-transform: uppercase;   /* uppercase text */
+  color: #6C6C6C;  /* default color */
+  font-weight: 700;            /* optional: slightly bold for readability */
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  font-size: 18px;
+  color: #1B1B1B;
+}
+
+/* Active link (Bootstrap adds .active automatically) */
+.navbar .nav-link.active {
+  color: #0F4879;
+}
+
+
+/*  Front page
+==================================== */
+header {
+  background: 
+    linear-gradient(rgba(15, 72, 121, 0.6), rgba(15, 72, 121, 0.6)), /* blue overlay */
+    url("../../images/theme/banner.png") no-repeat center center;
+  background-size: cover;
+  color: #fff; /* ensures readable text */
+  background-color: #0F4879; /* fallback solid blue */
+}
+
+html {
+  scroll-padding-top: 80px; /* match your navbar height to not move to high with innerlinks */
+}
+
+.featured_content {
+  background-color: #e6e6e6; /* same as navbar */
+}
+
+
+/*  Grid organization 
+======================================= */
+/* Feature grid base */
+.feature_grid {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 4px solid #0F4879;
+  border-radius: 50px 0 50px 0;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 51, 102, 0.6); /* x-offset, y-offset, blur-radius, color */
+}
+
+/* put background image in ::before */
+.feature_grid::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;     /* image scaled down fully visible */
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: var(--grid-filter, none);
+  z-index: 1;
+}
+
+/* enable adding colored filters */
+.feature_grid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* put button above image */
+.feature_btn {
+  position: absolute;
+  width: 75%;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 4px;
+  font-weight: 300;
+  text-decoration: none;
+  outline: none; 
+  font-size: 1.5em; 
+  border: 1px solid #E6E6E6;
+  background: #0F4879; 
+  transition: background 0.3s ease;
+}
+
+.feature_grid.scale-on-hover:hover {
+  transform: scale(1.03);
+}
+
+/* When grid is hovered, also style the button inside */
+.feature_grid:hover .feature_btn {
+  background: rgba(27, 27, 27, 0.9); /* darker hover */
+  color: #fff;
+}
+
+
+/*  Projects
+==================================== */
+.projects-page p {
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.projects-page p+p {
+  margin-bottom: 0;
+  text-align: justify;
+  text-indent: 10px;
+}
+
+
+/*  Publications
+==================================== */
+.block-heading-two h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+
+/*  Team page
+==================================== */
+.inner-20 {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-25 {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-60 {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-75 {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-90 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-page p {
+  text-align: justify;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* .team-page p +p {
+  text-align: justify;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+} */
+
+
+/*  Footer
+==================================== */
+.footer {
+  background-color: #0F4879; 
+  color: #fff;
+}
+
+.footer a {
+  color: #c9c9c9; 
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer img {
+  /* filter: grayscale(100%) brightness(80%); */
+  border-radius: 50px 0 50px 0; /* adjust px for more/less rounding */
+  border: 3px solid #fff;
+  transition: filter 0.3s ease, border-radius 0.3s ease;
+}
+
+
+/*  Images
+==================================== */
+/* Individual backgrounds */
+.bg1::before { background-image: url("../../images/theme/chip-idea.png"); }
+.bg2::before  { background-image: url("../../images/theme/chip-paper.png"); }
+.bg3::before  { background-image: url("../../images/theme/chip-team.png"); }
+
+figure img {
+  border-radius: 50px 0 50px 0;
+}
+
+.front-page figure img {
+  border-radius: 20px 0 20px 0;
+}
+
+
+/*  Blocks
+==================================== */
+.long-block {                 /* use this when text is longer then the height of figure or there are no figures */
+  background-color: #f2f2f2;   /* light gray */
+  border-radius: 12px;         /* rounded corners */
+  padding: 10px;               /* inner spacing */
+  padding-bottom: 15px;        /*padding at the bottom of the rectangles */
+  margin-bottom: 0px;          /* separation between rectangles */
+  box-shadow: 0 4px 6px rgba(0, 51, 102, 0.6); /* x-offset, y-offset, blur-radius, color */
+}
+
+.short-block {                   /* use this when text is shorter then the height of figure */
+  background-color: #f2f2f2;   /* light gray */
+  border-radius: 12px;         /* rounded corners */
+  padding: 20px;               /* inner spacing */
+  padding-bottom: 5px;        /*padding at the bottom of the rectangles */
+  margin-bottom: 15px;          /* separation between rectangles */
+  box-shadow: 0 4px 6px rgba(0, 51, 102, 0.6); /* x-offset, y-offset, blur-radius, color */
+}
+
+.small-block {                   /* use this when text is shorter then the height of figure */
+  background-color: #f2f2f2;   /* light gray */
+  border-radius: 12px;         /* rounded corners */
+  padding: 0;               /* inner spacing */
+  padding-bottom: 0;        /*padding at the bottom of the rectangles */
+  margin-bottom: 15px;          /* separation between rectangles */
+  box-shadow: 0 4px 6px rgba(0, 51, 102, 0.6); /* x-offset, y-offset, blur-radius, color */
+}
+
+.block-heading h4 {
+  color: #0F4879;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+
+/*  Links coloring
+==================================== */
+.link-accent {
+  color: #003366; /* lighter blue */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-accent:hover {
+  text-decoration: underline;
+  color: #428bca;
+}
+
+
+/*  Helper functions
+==================================== */
+.h-200 { height: 200px; }
+.h-300 { height: 300px; }
+.h-400 { height: 400px; }
+.h-450 { height: 450px; }
+.h-500 { height: 500px; }
+.h-525 { height: 525px; }
+
+
+ol li {
+  margin-bottom: 0.25rem; /* changing spacing between line in list to 4px */
+}
+
+/* Color helper functions */
+.img-gray {
+  filter: grayscale(100%) brightness(100%); /* turning images gray */
+}
+
+.img-blue {
+  filter: sepia(100%) saturate(150%) hue-rotate(190deg); /* turning images blue */
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 550
+}
+
+h3 {
+  color: #003366;
+  font-weight: 700;
+  padding-top: 20px;
+
+}
+
+
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin-top: 1rem;  /* adds space before every paragraph */
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+
